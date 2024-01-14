@@ -1,6 +1,6 @@
 // Delete listed keys from dictionary
 'using strict';
-DroP = (D, ...X) => {
+const DroP = (D, ...X) => {
 
   X.forEach(
     (_) => {
