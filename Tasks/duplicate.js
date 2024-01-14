@@ -1,12 +1,12 @@
 // Return an array without duplicates
 
 duplicateValueInArr = (value, numberOfRepetitions) => {
-  if (N <= 0){
+  if (numberOfRepetitions <= 0){
     return [];
   }
   else {
     result = [];
-    for (let i = 0; i < N; i++) {
+    for (let i = 0; i < numberOfRepetitions; i++) {
       result[i] = value;
     }
     return result;
