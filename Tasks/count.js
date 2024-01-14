@@ -1,5 +1,5 @@
 // Sum all number values in dict
-'using strict';
+'use strict';
 const sumAllNumbers = (dict) => {
   let sumOfNumbers = 0;
   const keys = Object.keys(dict);
