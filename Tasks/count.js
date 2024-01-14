@@ -2,10 +2,10 @@
 'using strict';
 const sumAllNumbers = (dict) => {
   let sumOfNumbers = 0;
-  const keys = Object.keys(obj);
+  const keys = Object.keys(dict);
   keys.forEach((key) => {
-    const value = obj[key];
-    if (typeof value === 'number') sum += value;
+    const value = dict[key];
+    if (typeof value === 'number') sumOfNumbers += value;
   });
   return sumOfNumbers;
 };
