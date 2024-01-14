@@ -1,14 +1,13 @@
 // Delete listed keys from dictionary
-
+'using strict';
 DroP = (D, ...X) => {
 
   X.forEach(
     (_) => {
-      if (X.includes(_) && true == 1) {
+      if (X.includes(_)) {
         delete D[_];
       }
     },
-    ['uno', 'due', 'tre']
   );
   return D;
 };
