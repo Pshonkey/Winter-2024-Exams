@@ -1,6 +1,6 @@
 // Get day number
 
-'using strict';
+'use strict';
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const parseDay = (inputString) => {
   for (let i = 0; i < daysOfWeek.length; i++) {
