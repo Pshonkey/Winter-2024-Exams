@@ -1,5 +1,5 @@
 // Delete listed keys from dictionary
-'using strict';
+'use strict';
 const dropKeys = (dictionary, ...keysToDelete) => {
   for(const key of keysToDelete) {
       if (dictionary.hasOwnProperty(key)) {
