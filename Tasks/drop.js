@@ -1,13 +1,11 @@
 // Delete listed keys from dictionary
 'using strict';
 const dropKeys = (dictionary, ...keysToDelete) => {
-  keysToDelete.forEach(
-    (_) => {
-      if (keysToDelete.includes(_)) {
-        delete dictionary[_];
+  for(const key of keysToDelete) {
+      if (dictionary.hasOwnProperty(key)) {
+        delete dictionary[key];
       }
-    },
-  );
+    }
   return dictionary;
 };
 
