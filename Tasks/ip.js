@@ -3,7 +3,6 @@
 parseIP = (input) => {
   result = [];
   if (input === '') return;
-  else {
     splittedArray = input.split('.');
     if (splittedArray.length != 4) return;
     j = 0;
@@ -12,7 +11,6 @@ parseIP = (input) => {
       if (isNaN(result[j])) return;
       j++;
     }
-  }
   return result;
 };
 
