@@ -4,11 +4,11 @@ parseIP = (input) => {
   result = [];
   if (input === '') return;
   else {
-    B = input.split('.');
-    if (B.length != 4) return;
+    splittedArray = input.split('.');
+    if (splittedArray.length != 4) return;
     j = 0;
-    for (const b of B) {
-      result[j] = parseInt(b);
+    for (const key of splittedArray) {
+      result[j] = parseInt(key);
       if (isNaN(result[j])) return;
       j++;
     }
