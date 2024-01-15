@@ -2,8 +2,7 @@
 
 copyOnlyListedValues = (dict, ...listedValues) => {
   Object.keys(dict).forEach((key) => {
-    if (listedValues.includes(key)) {
-    } else {
+    if (!listedValues.includes(key)) {
       delete dict[key];
     }
   });
