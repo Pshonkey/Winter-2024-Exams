@@ -1,7 +1,7 @@
 // Reverse an array, you can't use .reverse()
-
-invertArray = (initialArray) => {
-  reversedArray = Object.keys(initialArray);
+'use strict';
+const invertArray = (initialArray) => {
+  const reversedArray = Object.keys(initialArray);
   reversedArray.forEach((i) => {
     reversedArray[i] = initialArray.pop();
   });
