@@ -1,14 +1,14 @@
 // Copy only listed values from dict
 
-only = (W, ...only) => {
-  X = Object.keys(W);
-  X.forEach((Z) => {
-    if (only.includes(Z)) {
+copyOnlyListedValues = (dict, ...listedValues) => {
+  keysOfDict = Object.keys(dict);
+  keysOfDict.forEach((key) => {
+    if (listedValues.includes(key)) {
     } else {
-      delete W[Z];
+      delete dict[key];
     }
   });
-  return W;
+  return dict;
 };
 
-module.exports = only;
+module.exports = copyOnlyListedValues;
