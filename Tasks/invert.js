@@ -2,9 +2,9 @@
 'use strict';
 const invertArray = (initialArray) => {
   const reversedArray = Object.keys(initialArray);
-  reversedArray.forEach((i) => {
+  for (let i = 0; i < reversedArray.length; i++) {
     reversedArray[i] = initialArray.pop();
-  });
+  };
   return reversedArray;
 };
 
