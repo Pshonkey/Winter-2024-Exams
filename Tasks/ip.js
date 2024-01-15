@@ -1,11 +1,11 @@
 // Split string by the first occurrence of separator
-
-parseIP = (input) => {
-  result = [];
+'use strict';
+const parseIP = (input) => {
+  const result = [];
   if (input === '') return;
-    splittedArray = input.split('.');
+    const splittedArray = input.split('.');
     if (splittedArray.length != 4) return;
-    j = 0;
+    let j = 0;
     for (const key of splittedArray) {
       result[j] = parseInt(key);
       if (isNaN(result[j])) return;
