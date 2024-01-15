@@ -1,11 +1,11 @@
 // Copy only listed values from dict
 'use strict';
 const copyOnlyListedValues = (dict, ...listedValues) => {
-  Object.keys(dict).forEach((key) => {
+  for (const key in dict) {
     if (!listedValues.includes(key)) {
       delete dict[key];
     }
-  });
+  }
   return dict;
 };
 
